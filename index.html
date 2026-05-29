@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Haris | Front-End Web Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen selection:bg-emerald-500/30 selection:text-emerald-400 overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/80 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#home" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="h-8 w-8 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center text-zinc-950 font-extrabold text-sm">MH</span>
+                <span>Haris<span class="text-emerald-400">.dev</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                <a href="#home" class="nav-link hover:text-emerald-400 transition-colors text-white">Home</a>
+                <a href="#about" class="nav-link hover:text-emerald-400 transition-colors">About</a>
+                <a href="#experience" class="nav-link hover:text-emerald-400 transition-colors">Experience</a>
+                <a href="#projects" class="nav-link hover:text-emerald-400 transition-colors">Projects</a>
+                <a href="#skills" class="nav-link hover:text-emerald-400 transition-colors">Skills</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="mailto:mohammadharis10678@gmail.com" class="bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-900/50 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center gap-2">
+                    Let's Talk <i data-lucide="arrow-up-right" class="w-4 h-4 text-emerald-400"></i>
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white transition-colors" aria-label="Toggle Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-b border-zinc-800 bg-zinc-950 px-4 pt-2 pb-6 flex flex-col gap-4 text-zinc-400 font-medium">
+            <a href="#home" class="mobile-nav-link py-2 hover:text-emerald-400 transition-colors">Home</a>
+            <a href="#about" class="mobile-nav-link py-2 hover:text-emerald-400 transition-colors">About</a>
+            <a href="#experience" class="mobile-nav-link py-2 hover:text-emerald-400 transition-colors">Experience</a>
+            <a href="#projects" class="mobile-nav-link py-2 hover:text-emerald-400 transition-colors">Projects</a>
+            <a href="#skills" class="mobile-nav-link py-2 hover:text-emerald-400 transition-colors">Skills</a>
+            <a href="mailto:mohammadharis10678@gmail.com" class="bg-emerald-500 hover:bg-emerald-600 text-zinc-950 text-center py-2.5 rounded-lg text-sm font-semibold transition-colors flex items-center justify-center gap-2 mt-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> Get In Touch
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 space-y-24 md:space-y-36 pb-24">
+        
+        <section id="home" class="min-h-[70vh] flex flex-col justify-center relative py-12">
+            <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="max-w-3xl space-y-6">
+                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-full text-xs font-medium text-emerald-400">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    Available for Entry-Level Roles
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
+                    Hi, I'm Mohammad Haris.<br>
+                    I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">interfaces that perform</span>.
+                </h1>
+                
+                <p class="text-lg text-zinc-400 max-w-2xl leading-relaxed">
+                    I am a Computer Science graduate and front-end developer based in Karachi. I specialize in sculpting responsive, accessible, and high-performance user interfaces using the modern React and Tailwind ecosystem.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-zinc-950 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2 shadow-lg shadow-emerald-500/10">
+                        View My Work <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                    <div class="flex items-center gap-2 border border-zinc-800 bg-zinc-900/50 p-1.5 rounded-xl">
+                        <a href="https://github.com" target="_blank" class="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-all" aria-label="Github"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-all" aria-label="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="mailto:mohammadharis10678@gmail.com" class="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-lg transition-all" aria-label="Email"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                        <span class="w-8 h-px bg-emerald-500/50"></span> Profile
+                    </h2>
+                    <p class="text-3xl font-bold tracking-tight text-white">Behind the Code</p>
+                </div>
+                <div class="lg:col-span-2 space-y-6 text-zinc-400 leading-relaxed text-base">
+                    <p>
+                        With a formal background in Computer Science, I bridge the gap between architectural logic and fluid visual design. My foundational goal is to ensure clean, semantic markup paired with robust, maintainable components. 
+                    </p>
+                    <p>
+                        Beyond my time as an internal software engineering intern and junior developer, I dedicate effort to mentoring the next wave of local tech talent as a Front-End Instructor at Bano Qabil. This unique duality sharpens both my collaborative agility and technical depth every single day.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-zinc-100">
+                        <div class="bg-zinc-900/40 border border-zinc-900 rounded-xl p-4 flex items-start gap-3">
+                            <div class="p-2 bg-emerald-500/10 rounded-lg text-emerald-400 mt-0.5"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-sm font-semibold">Bachelor in Computer Science</p>
+                                <p class="text-xs text-zinc-500">Iqra University (CGPA 2.98)</p>
+                            </div>
+                        </div>
+                        <div class="bg-zinc-900/40 border border-zinc-900 rounded-xl p-4 flex items-start gap-3">
+                            <div class="p-2 bg-emerald-500/10 rounded-lg text-emerald-400 mt-0.5"><i data-lucide="users" class="w-5 h-5"></i></div>
+                            <div>
+                                <p class="text-sm font-semibold">Technical Instructor</p>
+                                <p class="text-xs text-zinc-500">Bano Qabil Front-End Program</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                        <span class="w-8 h-px bg-emerald-500/50"></span> Career Journey
+                    </h2>
+                    <p class="text-3xl font-bold tracking-tight text-white">Professional Experience</p>
+                </div>
+                
+                <div class="lg:col-span-2 space-y-8 relative before:absolute before:inset-0 before:right-auto before:left-4 before:w-px before:bg-zinc-800">
+                    
+                    <div class="relative pl-10 group">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-zinc-950 border-2 border-emerald-400 rounded-full group-hover:bg-emerald-400 transition-colors duration-300"></div>
+                        <div class="bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 p-6 rounded-2xl transition-all glow-effect">
+                            <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Aug 2025 – Dec 2025</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Junior Frontend Web Developer</h3>
+                            <p class="text-sm text-zinc-400 mb-4">AXIS Business Solution — Karachi</p>
+                            <ul class="text-sm text-zinc-400 space-y-2.5 list-disc list-inside">
+                                <li>Developed modern, fully responsive web applications using HTML, CSS, JavaScript, Bootstrap, React, and Tailwind CSS.</li>
+                                <li>Ensured seamless runtime application performance and cross-device display optimizations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-10 group">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-zinc-950 border-2 border-emerald-400 rounded-full group-hover:bg-emerald-400 transition-colors duration-300"></div>
+                        <div class="bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 p-6 rounded-2xl transition-all glow-effect">
+                            <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Jul 2025 – Present</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Front End Web Development Instructor</h3>
+                            <p class="text-sm text-zinc-400 mb-4">Bano Qabil (Alkhidmat Foundation Pakistan) — Karachi</p>
+                            <ul class="text-sm text-zinc-400 space-y-2.5 list-none">
+                                <li class="flex items-start gap-2"><span class="text-emerald-400 mt-1">▹</span> Conduct interactive UI framework training sessions for intermediate & beginner streams.</li>
+                                <li class="flex items-start gap-2"><span class="text-emerald-400 mt-1">▹</span> Prepare highly structured modular course guidelines, code challenge reviews, and milestones.</li>
+                                <li class="flex items-start gap-2"><span class="text-emerald-400 mt-1">▹</span> Evangelize version control workflow standards using Git and GitHub architecture.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-10 group">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 bg-zinc-950 border-2 border-emerald-400 rounded-full group-hover:bg-emerald-400 transition-colors duration-300"></div>
+                        <div class="bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 p-6 rounded-2xl transition-all glow-effect">
+                            <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">May 2025 – Jul 2025</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Intern - Software Engineer</h3>
+                            <p class="text-sm text-zinc-400 mb-4">Strugbits — Karachi</p>
+                            <ul class="text-sm text-zinc-400 space-y-2.5 list-disc list-inside">
+                                <li>Delivered strict, pixel-perfect layout clones and isolated interactive utility mini-apps.</li>
+                                <li>Deepened hands-on frontend layout patterns across semantic base structures.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                        <span class="w-8 h-px bg-emerald-500/50"></span> Portfolio
+                    </h2>
+                    <p class="text-3xl font-bold tracking-tight text-white">Selected Projects</p>
+                </div>
+                
+                <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                    <button class="filter-btn px-4 py-2 rounded-lg bg-emerald-500 text-zinc-950 transition-all" data-filter="all">All Specs</button>
+                    <button class="filter-btn px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-400 transition-all" data-filter="react">React</button>
+                    <button class="filter-btn px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-400 transition-all" data-filter="vanilla">Vanilla JS</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projects-grid">
+                
+                <div class="project-card bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 rounded-2xl overflow-hidden p-6 flex flex-col justify-between transition-all duration-300 glow-effect" data-tech="vanilla">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 text-emerald-400"><i data-lucide="check-square" class="w-6 h-6"></i></div>
+                            <a href="https://mohammad-haris-55524.github.io/Todo-Application/" target="_blank" class="p-2 text-zinc-500 hover:text-white transition-colors" aria-label="Project Link"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Dynamic Task Management Hub</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                            Engineered a highly organized To-Do ecosystem mapping state-sorting engines, runtime deep search indexing, conditional grouping filtering, and permanent LocalStorage state sync pipelines.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">HTML5/CSS3</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Bootstrap</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Vanilla JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 rounded-2xl overflow-hidden p-6 flex flex-col justify-between transition-all duration-300 glow-effect" data-tech="vanilla">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 text-emerald-400"><i data-lucide="wallet" class="w-6 h-6"></i></div>
+                            <a href="https://mohammad-haris-55524.github.io/budgetingApplication.github.io/" target="_blank" class="p-2 text-zinc-500 hover:text-white transition-colors" aria-label="Project Link"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Real-Time Budgeting Engine</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                            Designed an analytical financial interface with strict transaction validation bounds, active automated expense timeline calculation patterns, and instantaneous balance metric synchronization.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Data State Logs</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Bootstrap</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">JavaScript ES6</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 rounded-2xl overflow-hidden p-6 flex flex-col justify-between transition-all duration-300 glow-effect" data-tech="react">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 text-emerald-400"><i data-lucide="shopping-bag" class="w-6 h-6"></i></div>
+                            <span class="text-xs text-zinc-600 font-semibold">Production Context</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">E-Commerce Architecture & Cart State</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                            Structured atomic modular components mapping scalable logic flows powered via Redux Toolkit slices to seamlessly regulate asynchronous local UI state and inventory operations.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">ReactJS</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Redux Toolkit</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">State Architecture</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-zinc-900/30 border border-zinc-900 hover:border-zinc-800 rounded-2xl overflow-hidden p-6 flex flex-col justify-between transition-all duration-300 glow-effect" data-tech="react">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="p-3 bg-zinc-900 rounded-xl border border-zinc-800 text-emerald-400"><i data-lucide="layers" class="w-6 h-6"></i></div>
+                            <span class="text-xs text-zinc-600 font-semibold">UI Engineering Clone</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">ToDesktop High-Fidelity UI Interface</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-4">
+                            Brought a complex application storefront interface layout to life, executing advanced responsive flexbox alignments and strict aspect ratio parameters using utilities.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">ReactJS</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Tailwind CSS</span>
+                        <span class="text-xs bg-zinc-900 px-2.5 py-1 rounded-md text-zinc-400 border border-zinc-800">Fluid Mechanics</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                        <span class="w-8 h-px bg-emerald-500/50"></span> Tech Stack
+                    </h2>
+                    <p class="text-3xl font-bold tracking-tight text-white">Capabilities</p>
+                </div>
+                
+                <div class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">JavaScript (ES6+)</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">React.js</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">Redux Toolkit</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">Tailwind CSS</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">Bootstrap</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">HTML5 / CSS3</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">React Router</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">Git & GitHub</span>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-900 p-4 rounded-xl flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-sm font-medium text-zinc-200">Responsive UI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950 text-zinc-500 py-8 text-xs text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Mohammad Haris. Handcrafted with clean layout protocols.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://github.com" target="_blank" class="hover:text-zinc-300">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-zinc-300">LinkedIn</a>
+                <a href="mailto:mohammadharis10678@gmail.com" class="hover:text-zinc-300">Email Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Interactivity
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // Close Mobile Menu on navigation select
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Dynamic Projects Filtering System
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Toggle state presentation styles across target filter elements
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-emerald-500', 'text-zinc-950');
+                    b.classList.add('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+                });
+                btn.classList.add('bg-emerald-500', 'text-zinc-950');
+                btn.classList.remove('bg-zinc-900', 'border', 'border-zinc-800', 'text-zinc-400');
+
+                const filterTarget = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterTarget === 'all' || card.getAttribute('data-tech') === filterTarget) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Active Navigation Link Highlighting on Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-emerald-400', 'text-white');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('text-emerald-400');
+                } else {
+                    link.classList.add('text-zinc-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
